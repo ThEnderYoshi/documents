@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id": "https://github.com/ThEnderYoshi/documents/schemas/terraria.pack.json",
+    "title": "Terraria pack.json Schema",
+    "description": "Simple schema for what pack.json in Terraria Resource Packs should contain.",
+    "type": "object",
+
+    "properties": {
+        "Name": {
+            "description": "The name of the Resource Pack.",
+            "type": "string"
+        },
+        "Author": {
+            "description": "The one(s) who made this Resource Pack (that's you!)",
+            "type": "string"
+        },
+        "Description": {
+            "description": "The description shown in-game.\nFollows Terraria markup.\nWill be used for the Workshop description (which uses BBCode instead), but can be changed when published.",
+            "type": "string"
+        },
+        "Version": {
+            "description": "The Pack's version. Remember to change this every new release of your Pack.",
+            "type": "object",
+
+            "properties": {
+                "major": {
+                    "description": "The X in `vX.Y`. It is recommended you change this whenever a big update is released.\nIf you increment this number, it is recommended you reset the `minor` value back to zero.",
+                    "type": "integer",
+                    "exclusiveMinimum": 1
+                },
+                "minor": {
+                    "description": "The Y in `vX.Y`. It is recommended you change this whenever a smaller update is released.",
+                    "type": "integer",
+                    "exclusiveMinimum": 0
+                }
+            },
+            "required": ["major", "minor"]
+        }
+    },
+    "required": ["Name", "Author", "Description", "Version"]
+}
