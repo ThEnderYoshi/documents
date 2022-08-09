@@ -1,6 +1,6 @@
 {
-    "$schema": "http://json-schema.org/schema",
-    "$id": "https://github.com/ThEnderYoshi/documents/schemas/terraria.pack.json",
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://github.com/ThEnderYoshi/documents/schemas/terraria-pack.json",
     "title": "Terraria pack.json Schema",
     "description": "Simple schema for what pack.json in Terraria Resource Packs should contain.",
     "type": "object",
