@@ -26,12 +26,12 @@
                 "major": {
                     "description": "The X in `vX.Y`. It is recommended you change this whenever a big update is released.\nIf you increment this number, it is recommended you reset the `minor` value back to zero.",
                     "type": "integer",
-                    "exclusiveMinimum": 1
+                    "minimum": 1
                 },
                 "minor": {
                     "description": "The Y in `vX.Y`. It is recommended you change this whenever a smaller update is released.",
                     "type": "integer",
-                    "exclusiveMinimum": 0
+                    "minimum": 0
                 }
             },
             "required": ["major", "minor"]
