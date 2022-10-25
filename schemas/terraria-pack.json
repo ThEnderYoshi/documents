@@ -4,7 +4,6 @@
     "title": "Terraria pack.json Schema",
     "description": "Simple schema for what pack.json in Terraria Resource Packs should contain.",
     "type": "object",
-
     "properties": {
         "Name": {
             "description": "The name of the Resource Pack.",
